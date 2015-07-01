@@ -16,7 +16,7 @@ module Woro
           'secret_access_key' => ask('Secret access key: '),
           'region' =>            ask('Region: ') { |q| q.default = 'eu-west-1' },
           'bucket_name' =>       ask('Bucket name: '),
-          'path' =>              ask('Path within Bucket: ') { |q| q.default = '/' },
+          'path' =>              ask('Path within Bucket: '),
         }
       end
 
@@ -91,7 +91,7 @@ module Woro
 
       def get_object(key)
         s3_client.get_object(bucket_name: bucket_name,
-                             key: key)[:data]
+                             key: "#{path}#{key}")[:data]
       end
 
       def list_objects(prefix = nil)
