@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Woro::S3::VERSION
   spec.authors       = ["Daniel Senff"]
   spec.email         = ["mail@danielsenff.de"]
-  spec.summary       = %q{Adapter to Github's Gist for use in Woro remote task management}
-  spec.description   = %q{Adapter to Github's Gist for use in Woro remote task management}
+  spec.summary       = %q{Adapter to Amazon S3 for use in Woro remote task management}
+  spec.description   = %q{Adapter to Amazon S3 for use in Woro remote task management}
   spec.homepage      = "http://github.com/Dahie/woro-s3"
   spec.license       = "MIT"
 

@@ -1,16 +1,29 @@
 # woro-s3
 
-Gist-Adapter for Woro remote task management
-
+Gist-Adapter for [Woro remote task management](https://github.com/github/woro)
 Using Amazons's S3 to share them with colleagues.
-
-## Woro adapters
 
 ## Usage
 
+On initialization of a new project, you can choose and setup S3-configuration with:
 
-Once you are done writing the task and you want to execute it on the remote system.
-First you have to push them online, in this case to Gist.
+```shell
+$ woro init
+```
+
+If you already have a configuration, you can add these lines to you `lib/config/woro.yml`
+
+```yaml
+adapters:
+  s3:
+    region: eu-west-1
+    bucket_name: <bucket name>
+    path: <path within bucket>
+    access_key_id: <access key id>
+    secret_access_key: <secret access key>
+```
+
+Use `s3` as adapter to upload your task to.
 
 ```shell
 $ woro push s3:cleanup_users
