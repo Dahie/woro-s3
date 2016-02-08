@@ -1,7 +1,7 @@
 # woro-s3
 
-Gist-Adapter for [Woro remote task management](https://github.com/github/woro)
-Using Amazons's S3 to share them with colleagues.
+Adapter for [Woro remote task management](https://github.com/github/woro)
+for using Amazons's S3 to share them with colleagues.
 
 ## Usage
 
