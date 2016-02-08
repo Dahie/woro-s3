@@ -29,9 +29,7 @@ Use `s3` as adapter to upload your task to.
 $ woro push s3:cleanup_users
 ```
 
-_Attention, depending on whether you set up a Gist/Github login on
-initialization. These tasks are online anonymous, but public, or
-private under the specified Github account._
+_Attention, depending on the properties of the specified S3 bucket, the rake tasks may be public._
 
 Now, to run a task remotely using Mina, specify the task:
 
